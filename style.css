@@ -76,7 +76,8 @@ a {
 .search {
     display: flex;
     align-items: center;
-    margin-top: 10;
+    margin-top: 10px;
+    text-align: center;
 }
 
 .icon-map {
@@ -99,16 +100,16 @@ input {
     padding: 0px;
 }
 
-.search > button {
+.search_button {
     border-radius: 0px 10px 10px 0;
     background-color: #0065fc;
     border: #0065fc 1px solid;
     height: 50px;
+    color: white;
+    font-weight: bold;
+    padding: 0 0.5rem;
 }
 
-.search > button > a {
-    color: white;
-}
 
 .filter {
     margin-top: 30px;
