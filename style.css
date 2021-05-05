@@ -265,69 +265,64 @@ input {
 
 #gallery {
     display: grid;
-    grid-gap: 30px;
-    width: 100%;
     grid-template-columns: repeat(4, 1fr);
-
+    grid-template-rows: auto 14rem 2rem 2rem 2rem 14rem;
+    column-gap: 2rem;
+    margin: 4rem 0;
 }
 
 .img-activite {
+    position: absolute;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
-    border-radius: 15px 15px 0px 0px;
-}
-
-.big {   
-    height: 500px;
-    width: 100%;
-}
-
-.small {
-    height: 200px;
-    width: 100%;
 }
 
 .item-gallery {
-    background-color: white;
-    border-radius: 1.25rem;
     box-shadow: 0 0 16px #0000002e;
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition-duration: 0.1s;
 }
 
-.item-gallery:hover {
+ .item-gallery:hover {
     transform: scale(1.02);
-}
+} 
 
 .a {
-    grid-row-start: 1;
-    grid-row-end: 3;
+    grid-column: 1/2;
+    grid-row: 2/7;
 }
 
 .b {
-    grid-row-start: 1;
-    grid-row-end: 2;
+    grid-column: 2/3;
+    grid-row: 2/5;
 }
 
 .c {
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-column: 3/4;
+    grid-row: 2/7;
 }
 
 .d {
-    grid-row-start: 1;
-    grid-row-end: 3;
+    grid-column: 4/5;
+    grid-row: 2/3;
 }
 
 .e {
-    grid-row-start: 1;
-    grid-row-end: 2;
+    grid-column: 2/3;
+    grid-row: 6/7;
 }
 
 .f {
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-column: 4/5;
+    grid-row: 4/7;
 }
 
 .sub-title-activite {
-    padding-left: 15px;
+    margin: 1.2rem 1.5rem;
 }
 
 .title-activite {
@@ -337,7 +332,7 @@ input {
 .footer {
     margin-top: 50px;
     display: flex;
-    background-color: #F2F2F2;
+    background-color: #d9d9d9;
     padding-left: 10px;
 }
 
@@ -398,11 +393,6 @@ input {
         grid-gap: 10px;
     }
     
-    #gallery {
-        display: flex;
-        flex-direction: column;
-    }
-    
     .a-propos {
         width: auto;
     }
@@ -427,8 +417,49 @@ input {
         padding-bottom: 5px;
         color: #0065fc;
     }
+    
+    #gallery {
+        grid-template-columns: 1fr;
+        grid-template-rows: 12rem 12rem 12rem 12rem 12rem 12rem 12rem;
+        row-gap: 2rem;
+    }
+    
+    .a {
+        grid-column: auto;
+        grid-row: auto;
+    }
+    
+    .b {
+        grid-column: auto;
+        grid-row: auto;
+    }
+    
+    .c {
+        grid-column: auto;
+        grid-row: auto;
+    }
+    
+    .d {
+        grid-column: auto;
+        grid-row: auto;
+    }
+    
+    .e {
+        grid-column: auto;
+        grid-row: auto;
+    }
+    
+    .f {
+        grid-column: auto;
+        grid-row: auto;
+    }
 }
 
 .grey {
     color: grey;
+}
+
+.flex-gallery {
+    position: relative;
+    flex: 1;
 }
