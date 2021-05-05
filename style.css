@@ -183,7 +183,7 @@ input {
     padding: 0px 20px 20px 20px;
 }
 
-.hebergement-articles > article {
+.hebergement-articles > a {
     background: white;
     border-radius: 20px;
     padding: 5px;
@@ -192,7 +192,7 @@ input {
     transition: all 1s ease;
 }
 
-.hebergement-articles > article > a > img {
+.hebergement-articles > a > img {
     background-color: white;
     border-radius: 15px 15px 0px 0px;
     transition-duration: 0.1s;
@@ -209,7 +209,7 @@ input {
     grid-row-gap: 30px;
 }
 
-.hebergement-articles > article:hover {
+.hebergement-articles > a:hover {
     transform: scale(1.02);
 }
 
@@ -217,12 +217,6 @@ input {
     display: grid;
     grid-template-columns: 60% auto;
     grid-column-gap: 30px;
-}
-
-.bg-article > div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .populaire-articles > article {
