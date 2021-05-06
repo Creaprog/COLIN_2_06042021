@@ -457,3 +457,9 @@ input {
     position: relative;
     flex: 1;
 }
+
+.pop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
