@@ -228,6 +228,7 @@ input {
     box-sizing: border-box;
     border-radius: 15px;
     height: 150px;
+    background-color: #fff;
 }
 
 .populaire-articles > article:hover {
