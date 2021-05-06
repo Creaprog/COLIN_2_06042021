@@ -241,7 +241,9 @@ input {
 }
 
 .pop-txt {
+    display: flex;
     flex: 1;
+    justify-content: space-between;
     flex-direction: column;
 }
 
@@ -458,4 +460,8 @@ input {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.etoiles {
+    word-spacing: -1ch;
 }
